@@ -35,4 +35,12 @@
     //alert("You are " + years + " years old!");
   //});
 });
+  $(function() {
+      $('input[name="data"]').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true,
+        minYear: 2020,
+        maxYear: parseInt(moment().format('YYYY'),10)
+      })
+});
 
